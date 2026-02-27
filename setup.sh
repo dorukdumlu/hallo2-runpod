@@ -16,8 +16,13 @@ cd hallo2
 
 # 2. Install deps
 echo "[2/5] Paketler kuruluyor..."
-pip install -q -r requirements.txt
-pip install -q moviepy==1.0.3
+if [ ! -d ".venv" ]; then
+    python3 -m venv .venv
+fi
+source .venv/bin/activate
+python -m pip install -q --upgrade pip setuptools wheel
+python -m pip install -q -r requirements.txt
+python -m pip install -q moviepy==1.0.3
 
 # 3. Download models
 echo "[3/5] Model agirliklari indiriliyor (~5GB)..."

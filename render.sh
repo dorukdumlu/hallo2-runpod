@@ -2,6 +2,7 @@
 set -e
 
 cd /workspace/hallo2
+source .venv/bin/activate
 
 echo "========================================="
 echo "  Hallo2 Render (40 steps, A100)"
