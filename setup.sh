@@ -10,7 +10,7 @@ cd /workspace
 # 1. Clone Hallo2
 echo "[1/5] Hallo2 klonlaniyor..."
 if [ ! -d "hallo2" ]; then
-    git clone https://github.com/fudan-generative-ai/hallo2.git
+    git clone https://github.com/fudan-generative-vision/hallo2.git
 fi
 cd hallo2
 
